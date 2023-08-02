@@ -6,7 +6,7 @@
         <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>WCC Portfolio - Demo Page</title>
+        <title>WORK-PAGE</title>
 
         <!-- including for some global styling -->
         <link rel="stylesheet" href="css/style.css">
@@ -15,27 +15,27 @@
     <body>
         <!-- if you have sub-pages think about adding a simple back button -->
         <nav>
-            <a id="home" href="https://zhihengchen.github.io/Wcc-portfolio/"> <h4>HOME</h4></a>
+            <a id="home" href="https://zhihengchen.github.io/work-page/"> <h4>HOME</h4></a>
         </nav>
         <header class="documentation-header">
             <section class="center-text">
-                <h1>BW TELEVISION</h1>
-                <h2>by Zhiheng Chen</h6>
-                <p>BW Television is a virtual interactive installation which is controlled by music and mouse.</p> 
+                <h1>恶魔之火<h1>
+                <h2>陈智恒</h6>
+                <p>这个项目是一个交互式视频滤镜。</p> 
             </section>
         </header>
 
         <main class="documentation-page">
             <section>
                 <div class="responsive-video centered-content">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/825532023?h=acd641c746" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    <iframe title="vimeo-player" src="https://www.bilibili.com/video/BV11u411H7kA/?share_source=copy_web&vd_source=3961d12fabc0148b1201027a77570dfd" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
             </section>
             <section>
-                <h3>Introduction</h3>
-                <p>Black and White Television is a multisensory virtual interactive installation. The animation on the screen of BW TV is controlled by music, mouse position and slider’s data. Audiences can move mouse and drag the slider to interact with this project.</p>
+                <h3>简介</h3>
+                <p>这个项目是一个交互式视频滤镜。任何使用该滤镜的人都可以成为从火焰中被唤醒的恶魔。当用户静止不动时，恶魔就像仍在沉睡。当用户移动身体时，恶魔就会从火焰中苏醒。用户移动得越快，恶魔苏醒得越快，身上的火焰燃烧得越旺。</p>
             </section>
-            <section>
+            <!-- <section>
                 <h3>Concept and Background Research</h3>
                 
                 <p>The concept behind the multisensory virtual interactive installation, "Black and White Television," is to create an immersive experience for the audience by combining visual, auditory, and tactile elements. The installation utilizes a virtual black and white TV and speakers, controlled by music, mouse position, and slider data. The project aims to stimulate the audience's senses and provide an engaging and interactive encounter.</p>
@@ -49,16 +49,16 @@
                     <div class="flex-item">
                         <img src="assets/images/speaker.jpg"/>
                     </div>
-                </div>
+                </div> -->
                 <!-- if you have a full width image try make it not too tall -->
                 <!-- <img src="../assets/images/tv.jpeg" width="50%" height="50%"/> -->
                 
             </section>
             <section>
-                <h3>Technical Implementation</h3>
+                <h3>技术实施</h3>
 
                 <!-- example of styling for three images, you can write your own styling -->
-                <div class="flex-container flex-basis-third">
+                <!-- <div class="flex-container flex-basis-third">
                     <div class="flex-item">
                         <img src="assets/images/fragment.png"/>
                     </div>
@@ -77,9 +77,13 @@
                     <div class="flex-item">
                         <img src="assets/images/code2.png"/>
                     </div>
-                </div>
+                </div> -->
                 
-                <p>First, I used fragment and vertex shaders to create an animation of the virtual objects. Second, I created the 3D scene using three.js and imported the TV model, speakers model and audio file. Then I passed the audio data, mouse position data and Gui’s data from three.js to the fragment shader and used these data to allow the audiences to interact with the virtual objects on the screen. I used three.js, the fragment and vertex shaders and Blender to create the virtual objects because these are tools I am not familiar with and I think they are very suitable for 3D object creation. I really wanted to learn more about programming techniques for 3D objects. </p>
+                <p>我将结合使用图像处理技术，将网络摄像头图像转换为灰度图像，对灰度图像进行阈值化处理以获得二值图像，然后使用颜色检测技术提取所需的颜色。
+
+                    提取颜色后，我将使用像素化和色散聚类效果，在用户身上营造出火焰的外观。这可以通过对提取的颜色应用像素化效果，然后使用色散聚类将像素分散到用户身体周围来实现。
+                    
+                    最后，我使用运动检测算法来跟踪用户的运动，并相应地调整火焰的强度。这可以通过分析网络摄像头画面中用户身体的移动来实现，然后根据移动情况调整火焰的强度。</p>
             
                 <!-- example of styling for three images, you can write your own styling -->
                 <!-- <div class="flex-container flex-basis-half">
@@ -110,7 +114,7 @@
                 </div> -->
          
             </section>
-            <section>
+            <!-- <section>
                 <h3>Reflection and Future Development</h3>
                 <p>Throughout the project, I encountered challenges that prompted a shift in my original approach. While the final rendering and modelling of the 3D scene were satisfying, the animation of the virtual objects and the interactive aspects of the installation require further improvement. I acknowledge the need to explore additional algorithms to enhance the generation of virtual objects and plan to dedicate more time to studying three.js and advancing my skills in 3D object programming.</p>
                 <p>Despite the initial setbacks, the decision to transition to a virtual environment using three.js proved beneficial. It allowed me to exercise greater control over various elements of the installation, including lighting, space, position, materials, and size. By utilizing tools such as three.js, fragment and vertex shaders, and Blender, I expanded their skill set and acquired valuable experience in the creation of 3D objects.</p>
@@ -122,7 +126,7 @@
                     <li>https://luruke.github.io/monolith/index.html</li>
                     <li>https://twitter.com/luruke</li>
                 </ul>
-            </section>
+            </section> -->
         </main>
 
         <footer>
